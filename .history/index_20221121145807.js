@@ -4,7 +4,7 @@ function scuberGreetingForFeet(rideDistance){
     return "No can do.";
   } else if(rideDistance <= 400) {
     return "This one is on me!";
-  } else if ((rideDistance > 400) && (rideDistance <= 2000)) {
+  } else if (rideDistance <= 2000) {
     return "That will be twenty bucks.";
   } else if (rideDistance > 2000) {
     return "I will gladly take your thirty bucks.";
@@ -25,6 +25,7 @@ function switchOnCharmFromTip(tip){
     case "not as generous":
       return "Thank you."
     default:
-      return "Bye."
+      return ""
+
   }
 }

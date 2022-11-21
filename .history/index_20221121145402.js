@@ -4,7 +4,7 @@ function scuberGreetingForFeet(rideDistance){
     return "No can do.";
   } else if(rideDistance <= 400) {
     return "This one is on me!";
-  } else if ((rideDistance > 400) && (rideDistance <= 2000)) {
+  } else if (rideDistance <= 2000) {
     return "That will be twenty bucks.";
   } else if (rideDistance > 2000) {
     return "I will gladly take your thirty bucks.";
@@ -14,17 +14,9 @@ function scuberGreetingForFeet(rideDistance){
 
 function ternaryCheckCity(city){
   // Write your code here!
-  return city === "NYC" ? "Ok, sounds good." : "No go.";
+  return city === "NYC" ? "Ok, sounds good." : "No go."
 }
 
-function switchOnCharmFromTip(tip){
+function switchOnCharmFromTip(){
   // Write your code here!
-  switch(tip) {
-    case "generous":
-      return "Thank you so much."
-    case "not as generous":
-      return "Thank you."
-    default:
-      return "Bye."
-  }
 }
